@@ -1,0 +1,31 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 2 * $main-indent);
+  padding: $main-indent;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: arial, sans-serif;
+
+  td, th {
+    width: calc(100% / 3);
+    padding: 8px;
+    border: 1px solid $color-grey;
+    text-align: left;
+  }
+
+  tr:nth-child(even) {
+    background-color: $color-grey;
+  }
+
+  tr td.-completed{
+    //td:first-child {
+    //  cursor: pointer;
+    //}
+    background-color: #d9eee1;
+  }
+
+}

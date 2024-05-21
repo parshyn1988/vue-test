@@ -1,0 +1,38 @@
+.user {
+  &__search,
+  &__back {
+    margin-bottom: $main-indent;
+    padding: 8px;
+    border: 1px solid $color-grey;
+  }
+
+  &__back {
+    width: fit-content;
+  }
+
+  &__title {
+    margin-bottom: $main-indent;
+    font-weight: 600;
+  }
+
+  &__list {
+    tr td:first-child {
+      cursor: pointer;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+
+    button {
+      padding: 8px;
+      border: 1px solid $color-grey;
+
+      &:first-child {
+        margin-right: $main-indent;
+      }
+    }
+  }
+}
